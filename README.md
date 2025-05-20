@@ -1,43 +1,68 @@
-FreelancerAPI
+# FreelancerAPI
 
+Welcome to **FreelancerAPI**, a robust and secure RESTful API built with **ASP.NET Core 8.0** for managing freelancer profiles. This API provides CRUD operations, search, archiving, caching, and JWT-based authentication — all implemented using **Clean Architecture** principles to ensure high maintainability, testability, and scalability.
 
+> 🕓 **Current Date & Time:** 04:47 PM (GMT+8), Tuesday, May 20, 2025  
+> 🔗 **Repository:** [GitHub – FreelancerAPI](https://github.com/yourusername/FreelancerAPI)
 
+---
 
+## 📚 Table of Contents
 
-Welcome to FreelancerAPI, a robust RESTful API built with ASP.NET Core 8.0 to manage freelancer profiles, including CRUD operations, search functionality, caching, and JWT-based authentication. This project is designed with Clean Architecture principles to ensure maintainability, testability, and scalability.
+- [Features](#features)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Current Date and Time: 04:47 PM +08 on Tuesday, May 20, 2025.
-Repository: https://github.com/yourusername/FreelancerAPI
-Table of Contents
-Features
-Architecture
-Getting Started
-Prerequisites
-Installation
-Usage
-API Endpoints
-Configuration
-Contributing
-License
-Contact
-Features
-CRUD Operations: Create, read, update, and delete freelancer profiles.
-Search Functionality: Wildcard search by username or email.
-Archiving: Archive or unarchive freelancers.
-Caching: In-memory caching with IMemoryCache for performance.
-Authentication: Secure access with JWT tokens (valid until 05:47 PM +08 on May 20, 2025, by default).
-Clean Architecture: Separated layers for entities, use cases, controllers, and infrastructure.
-Architecture
-The FreelancerAPI follows Clean Architecture to ensure a decoupled and maintainable codebase:
+---
 
-Layers
-Entities (Core):
-Business models (e.g., Freelancer, Skillset, Hobby) with core rules.
-Independent of frameworks or databases.
-Use Cases (Application Layer):
-Application-specific logic (e.g., GetFreelancerUseCase, CreateFreelancerUseCase).
-Defines interfaces for external systems.
-Interface Adapters (Controllers):
-Translates HTTP requests to use case calls (e.g., FreelancersController).
-Frameworks and Drivers (Infrastructure):
-External implementations (e.g., ApplicationDbContext, IMemoryCache, EF Core).
+## 🚀 Features
+
+- ✅ **CRUD Operations** – Create, Read, Update, Delete freelancer profiles
+- 🔍 **Search** – Wildcard search by username or email
+- 🗂️ **Archiving** – Archive/unarchive freelancer profiles
+- ⚡ **Caching** – In-memory caching with `IMemoryCache` for performance boost
+- 🔐 **Authentication** – JWT-based secure API access
+- 🧱 **Clean Architecture** – Separation of concerns across layers:
+  - Entities (Domain)
+  - Use Cases (Application)
+  - Infrastructure (Data & Services)
+  - API (Presentation Layer)
+
+---
+
+## 🏗️ Architecture
+
+This project follows **Clean Architecture** and organizes code into:
+- `Domain`: Core entities and interfaces
+- `Application`: Business rules and use cases
+- `Infrastructure`: Data access (EF Core, caching)
+- `API`: Controllers and middleware
+
+This structure supports scalability, unit testing, and clean separation of concerns.
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download)
+- Visual Studio 2022+ or VS Code
+- SQL Server (or in-memory DB for testing)
+- Postman (optional, for API testing)
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/FreelancerAPI.git
+   cd FreelancerAPI
