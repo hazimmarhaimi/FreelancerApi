@@ -62,7 +62,37 @@ This structure supports scalability, unit testing, and clean separation of conce
 
 ## ⚙️ Installation
 
-1. **Clone the repository**
+**Clone the repository**
    ```bash
    git clone https://github.com/yourusername/FreelancerAPI.git
    cd FreelancerAPI
+
+
+
+▶️ Usage
+Use Swagger UI  or Postman to test endpoints.
+To authenticate, call the /auth/login endpoint and use the returned JWT token in Authorization: Bearer {token} headers.
+
+📌 API Endpoints
+Method	Endpoint	Description
+GET	/api/freelancers	List all freelancers
+GET	/api/freelancers/{id}	Get freelancer by ID
+POST	/api/freelancers/register	Create new freelancer
+PUT	/api/freelancers/update/{id}	Update freelancer info
+DELETE	/api/freelancers/delete/{id}	Delete (soft-delete) freelancer
+GET	/api/freelancers/search?query=	Search by username/email
+POST	/api/freelancers/{id}/archive	Archive profile
+POST	/api/freelancers/{id}/unarchive	Unarchive profile
+
+
+🔧 Configuration
+JWT token settings are stored in appsettings.json.
+Default token expiration is 1 hour from issuance (valid until 05:47 PM +08, May 20, 2025).
+
+# JSON Web Token 
+"Jwt": {
+  "Key": "YourSuperSecretKeyHere",
+  "Issuer": "FreelancerAPI",
+  "Audience": "FreelancerUsers",
+  "ExpiresInMinutes": 60
+}
