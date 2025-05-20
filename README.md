@@ -13,13 +13,10 @@ Welcome to **FreelancerAPI**, a robust and secure RESTful API built with **ASP.N
 - [Architecture](#architecture)
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Installation](#installation)
 
 ---
 
@@ -60,22 +57,14 @@ This structure supports scalability, unit testing, and clean separation of conce
 
 ---
 
-## 📚 Table of Contents
 
-- [Features](#features)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
+
+## ▶️ Usage
+
+Use Swagger UI  or Postman to test endpoints.
+To authenticate, call the /auth/login endpoint and use the returned JWT token in Authorization: Bearer {token} headers.
 ---
-
 
 ## 📚 📌 API Endpoints
 
@@ -92,13 +81,6 @@ This structure supports scalability, unit testing, and clean separation of conce
 | POST   | `/api/freelancers/{id}/unarchive` | Unarchive profile               |
 
 ---
-
-## ▶️ Usage
-
-Use Swagger UI  or Postman to test endpoints.
-To authenticate, call the /auth/login endpoint and use the returned JWT token in Authorization: Bearer {token} headers.
----
-
 ## 🔧 Configuration
 JWT token settings are stored in appsettings.json.
 Default token expiration is 1 hour from issuance (valid until 05:47 PM +08, May 20, 2025).
