@@ -1,7 +1,7 @@
 ﻿using FreelancerAPI;
 using FreelancerAPI.Data;
 using FreelancerAPI.Dtos;
-using FreelancerAPI.Enitites;
+using FreelancerAPI.Entities;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;

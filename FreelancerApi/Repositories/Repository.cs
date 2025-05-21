@@ -1,6 +1,6 @@
 ﻿using FreelancerAPI.Data;
 using FreelancerAPI.Dtos;
-using FreelancerAPI.Enitites;
+using FreelancerAPI.Entities;
 using FreelancerAPI.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

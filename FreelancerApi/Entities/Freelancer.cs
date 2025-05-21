@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FreelancerAPI.Enitites;
+namespace FreelancerAPI.Entities;
 
 public class Freelancer { 
     public int Id { get; set; } 

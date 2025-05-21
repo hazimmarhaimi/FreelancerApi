@@ -1,4 +1,4 @@
-﻿using FreelancerAPI.Enitites;
+﻿using FreelancerAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FreelancerAPI.Data;
